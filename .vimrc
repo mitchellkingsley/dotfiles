@@ -36,6 +36,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'https://github.com/scrooloose/nerdtree.git'
     Plug 'https://github.com/yuttie/comfortable-motion.vim.git'
     Plug 'https://github.com/vim-airline/vim-airline.git'
+    Plug 'https://github.com/vim-python/python-syntax.git'
 call plug#end()
 
 " Nerdtree Settings
