@@ -20,6 +20,11 @@ set expandtab
 "highlight colorcolumn ctermbg=7                                            
 highlight Search     ctermfg=Black      ctermbg=Red     cterm=NONE
 highlight lineNr ctermfg=240
+highlight Comment ctermfg=Cyan
+highlight Statement ctermfg=Green
+highlight Type ctermfg=Blue
+highlight Special ctermfg=Blue
+highlight Constant ctermfg=Red
 "set colorcolumn=75
 
 " Plugins
@@ -37,6 +42,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'https://github.com/yuttie/comfortable-motion.vim.git'
     Plug 'https://github.com/vim-airline/vim-airline.git'
     Plug 'https://github.com/vim-python/python-syntax.git'
+    Plug 'https://github.com/bfrg/vim-cpp-modern.git'
 call plug#end()
 
 " Nerdtree Settings
@@ -56,4 +62,3 @@ noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 
 " Python Syntax Settings
 let g:python_highlight_all = 1
-
