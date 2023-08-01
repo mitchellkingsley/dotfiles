@@ -20,10 +20,6 @@ set expandtab
 "highlight colorcolumn ctermbg=7                                            
 highlight Search     ctermfg=Black      ctermbg=Red     cterm=NONE
 highlight lineNr ctermfg=240
-highlight Comment ctermfg=Cyan
-highlight Statement ctermfg=Green
-highlight Type ctermfg=Blue
-highlight Special ctermfg=Blue
 highlight Constant ctermfg=Red
 "set colorcolumn=75
 
@@ -43,11 +39,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'https://github.com/vim-airline/vim-airline.git'
     Plug 'https://github.com/vim-python/python-syntax.git'
     Plug 'https://github.com/bfrg/vim-cpp-modern.git'
+    Plug 'https://github.com/christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 " Nerdtree Settings
 map <C-t> :NERDTreeToggle<CR>
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "left"
 
 " Limelight Settings
 let g:limelight_conceal_ctermfg = 240
