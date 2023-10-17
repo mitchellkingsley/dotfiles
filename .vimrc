@@ -1,26 +1,33 @@
-set mouse=a                                                                
-syntax on                                                                  
-colorscheme desert                                                         
-set wildmode=longest,list,full                                             
-set wildmenu                                                               
-set hlsearch                                                               
+set mouse=a
+syntax on
+colorscheme desert
+set wildmode=longest,list,full
+set wildmenu
+set hlsearch
 " Window Settings
-set number                                                                 
-set wrap!                                                                  
+set number
+set wrap!
 
 " Tabbing options
-filetype indent plugin on                                                  
-set guioptions+=b                                                          
-set tabstop=4                                                              
-set shiftwidth=4                                                           
-set expandtab                                                              
+filetype indent plugin on
+set guioptions+=b
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set cursorline
+set cursorcolumn
+
+" Paste Settings
+set pastetoggle=<C-p>
 
 " Color Options
-"set colorcolumn=120                                                        
-"highlight colorcolumn ctermbg=7                                            
+"set colorcolumn=120
+"highlight colorcolumn ctermbg=7
 highlight Search     ctermfg=Black      ctermbg=Red     cterm=NONE
 highlight lineNr ctermfg=240
 highlight Constant ctermfg=Red
+highlight CursorColumn ctermbg=0
+highlight CursorLine ctermbg=0
 "set colorcolumn=75
 
 " Plugins
@@ -50,7 +57,7 @@ let g:NERDTreeWinPos = "left"
 " Limelight Settings
 let g:limelight_conceal_ctermfg = 240
 let g:limelight_conceal_guifg = '#777777'
-let g:limelight_paragraph_span = 0 
+let g:limelight_paragraph_span = 0
 let g:limelight_priority = -1
 map <C-l> :Limelight!!<CR>
 
