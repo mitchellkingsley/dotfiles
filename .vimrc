@@ -19,6 +19,7 @@ set cursorcolumn
 
 " Paste Settings
 set pastetoggle=<C-p>
+noremap <C-n> :set invnumber<CR>
 
 " Color Options
 "set colorcolumn=120
